@@ -1,3 +1,5 @@
+# Day 1: Secret Entrance
+
 ### Abstract
 
 The problem asks us to simulate a circular dial (numbered 0-99) reacting to a sequence of rotational instructions (`L` or `R` followed by an integer magnitude).

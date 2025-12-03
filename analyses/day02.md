@@ -1,3 +1,5 @@
+# Day 2: Gift Shop
+
 ### Abstract
 
 The core challenge involves identifying "invalid" product IDs within large numeric ranges. The definition of "invalid" changes between parts, but both rely on detecting repeated digit patterns.
