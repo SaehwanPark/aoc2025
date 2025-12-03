@@ -24,7 +24,7 @@ F# solutions for [Advent of Code 2025](https://adventofcode.com/2025), featuring
 
 ### A Note on Unit Tests
 
-For Days 1–10, writing formal unit tests for every function might be overkill and slow us down.
+For Earlier days, writing formal unit tests for every function might be overkill and slow us down.
 
 * **Keep it:** For complex utility functions (e.g., "Rotate a 3D coordinate 90 degrees").
 * **Skip it:** For simple logic where the Integration Test (Step 8) covers the behavior.
