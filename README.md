@@ -1,43 +1,69 @@
-# Advent of Code 2025 Solutions
+# 🎄 Advent of Code 2025 Solutions (in F\#)
 
-- Personal Leaderboard: [link](https://adventofcode.com/2025/leaderboard/private/view/4062839?view_key=68c3d332)
-- You can join the leaderboard by using the code `4062839-80e6de7e`.
+This repository contains my solutions for the **Advent of Code 2025** challenges, implemented in **F\#** using the latest **.NET 10** runtime.
 
-F# solutions for [Advent of Code 2025](https://adventofcode.com/2025), featuring my own approaches and algorithms.
+-----
 
-### My AoC Workflow
+## 📅 The 12-Day Challenge
 
-1.  **Abstract & Read Carefully:** Read the prompt *twice*. Highlighting specific rules (e.g., "ties are broken by reading order").
-2.  **Input Analysis & Parsing:** Look at the raw input file immediately. Is it a grid? A list of instructions? Write a parser to convert `input.txt` $\rightarrow$ `YourDataStructure`.
-3.  **Algorithm Sketch & Big O:**
-    * Determine if the search space is small (Simulation) or massive (Math/Dynamic Programming).
-    * *Check:* Can I brute force this in under 15 seconds?
-4.  **Modular Design (Part 2 Preparation):**
-    * Instead of writing one big function, write helpers: `get_neighbors()`, `parse_line()`, `calculate_score()`.
-    * *Crucial:* Keep your logic for Part 1 separate from the shared utilities so you can copy-paste or extend for Part 2.
-5.  **Implementation & Visualization:**
-    * Implement. If working with grids/mazes, add a `print_grid()` function immediately. Visual debugging is faster than stepping through a debugger in AoC.
-6.  **The "Sample" Test (Integration):**
-    * Run against the provided example.
-    * **Stop:** If the sample passes but the answer is wrong, re-read the prompt for edge cases.
-7.  **Run Real Input:** Submit Step 1.
-8.  **Refactor for Part 2:**
-    * Read Part 2.
-    * *Decision point:* Do I extend Part 1's code, or is the complexity shift so high (e.g., changing from simulation to modular arithmetic) that I start a fresh file?
+Starting this year, the challenge runs for **12 days**, from **December 1st through December 12th**.
 
-### Puzzles and Solutions
+  * **Official Website:** [https://adventofcode.com/2025](https://adventofcode.com/2025)
 
-|Day|Puzzle Link|Solution Link|
-|---|---|---|
-|1|[Link](https://adventofcode.com/2025/day/1)|[Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day01.fsx)|
-|2|[Link](https://adventofcode.com/2025/day/2)|[Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day02.fsx)|
-|3|[Link](https://adventofcode.com/2025/day/3)|[Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day03.fsx)|
-|4|[Link](https://adventofcode.com/2025/day/4)|[Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day04.fsx)|
-|5|[Link](https://adventofcode.com/2025/day/5)||
-|6|[Link](https://adventofcode.com/2025/day/6)||
-|7|[Link](https://adventofcode.com/2025/day/7)||
-|8|[Link](https://adventofcode.com/2025/day/8)||
-|9|[Link](https://adventofcode.com/2025/day/9)||
-|10|[Link](https://adventofcode.com/2025/day/10)||
-|11|[Link](https://adventofcode.com/2025/day/11)||
-|12|[Link](https://adventofcode.com/2025/day/12)||
+-----
+
+## 💻 Repository Structure
+
+This repository is organized to separate the code, input data, and analysis:
+
+  * **`scripts/`**: Contains the F\# script files (`.fsx`) for each day's solution (e.g., `day01.fsx`).
+  * **`inputs/`**: Holds the personalized input files for each puzzle (e.g., `day01.txt`).
+  * **`analyses/`**: A place for algorithm analysis, development notes, and solution sketches (e.g., Markdown or text files).
+
+-----
+
+## ✅ Solutions
+
+The table below tracks my progress for the 12-day challenge and provides links to the puzzle descriptions and the corresponding F\# solution scripts.
+
+| Day | Puzzle Link | Solution Link |
+| :-- | :--- | :--- |
+| **1** | [Link](https://adventofcode.com/2025/day/1) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day01.fsx) |
+| **2** | [Link](https://adventofcode.com/2025/day/2) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day02.fsx) |
+| **3** | [Link](https://adventofcode.com/2025/day/3) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day03.fsx) |
+| **4** | [Link](https://adventofcode.com/2025/day/4) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day04.fsx) |
+| **5** | [Link](https://adventofcode.com/2025/day/5) | **WIP** |
+| **6** | [Link](https://adventofcode.com/2025/day/6) | **WIP** |
+| **7** | [Link](https://adventofcode.com/2025/day/7) | **WIP** |
+| **8** | [Link](https://adventofcode.com/2025/day/8) | **WIP** |
+| **9** | [Link](https://adventofcode.com/2025/day/9) | **WIP** |
+| **10**| [Link](https://adventofcode.com/2025/day/10) | **WIP** |
+| **11**| [Link](https://adventofcode.com/2025/day/11) | **WIP** |
+| **12**| [Link](https://adventofcode.com/2025/day/12) | **WIP** |
+
+-----
+
+## 🛠 Running the Solutions (F\# / .NET 10)
+
+To run these F\# scripts, you'll need the **[.NET 10 SDK](https://dotnet.microsoft.com/download)** (or newer) installed.
+
+1.  **Prerequisites:** Ensure you have the `.NET 10 SDK` installed.
+2.  **Run a script:** Navigate to the root directory and use the `dotnet fsi` command to execute an individual solution:
+
+<!-- end list -->
+
+```bash
+# Replace XX with the day number (e.g., 01, 02, etc.)
+dotnet fsi scripts/dayXX.fsx
+```
+
+> **Note:** The scripts are designed to read their puzzle input from the **`inputs/`** directory.
+
+-----
+
+## 🌟 Leaderboard
+
+Feel free to join the private leaderboard to compare scores and progress\!
+
+  * **Private Leaderboard Link:** [link](https://adventofcode.com/2025/leaderboard/private/view/4062839?view_key=68c3d332)
+  * **Join Code:** `4062839-80e6de7e`
