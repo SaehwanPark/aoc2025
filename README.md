@@ -36,7 +36,7 @@ For Earlier days, writing formal unit tests for every function might be overkill
 |1|[Link](https://adventofcode.com/2025/day/1)|[Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day01.fsx)|
 |2|[Link](https://adventofcode.com/2025/day/2)|[Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day02.fsx)|
 |3|[Link](https://adventofcode.com/2025/day/3)|[Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day03.fsx)|
-|4|[Link](https://adventofcode.com/2025/day/4)||
+|4|[Link](https://adventofcode.com/2025/day/4)|[Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day04.fsx)|
 |5|[Link](https://adventofcode.com/2025/day/5)||
 |6|[Link](https://adventofcode.com/2025/day/6)||
 |7|[Link](https://adventofcode.com/2025/day/7)||
