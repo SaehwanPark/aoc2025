@@ -1,5 +1,8 @@
 # Advent of Code 2025 Solutions
 
+- Personal Leaderboard: [link](https://adventofcode.com/2025/leaderboard/private/view/4062839?view_key=68c3d332)
+- You can join the leaderboard by using the code `4062839-80e6de7e`.
+
 F# solutions for [Advent of Code 2025](https://adventofcode.com/2025), featuring my own approaches and algorithms.
 
 ### My AoC Workflow
@@ -21,13 +24,6 @@ F# solutions for [Advent of Code 2025](https://adventofcode.com/2025), featuring
 8.  **Refactor for Part 2:**
     * Read Part 2.
     * *Decision point:* Do I extend Part 1's code, or is the complexity shift so high (e.g., changing from simulation to modular arithmetic) that I start a fresh file?
-
-### A Note on Unit Tests
-
-For Earlier days, writing formal unit tests for every function might be overkill and slow us down.
-
-* **Keep it:** For complex utility functions (e.g., "Rotate a 3D coordinate 90 degrees").
-* **Skip it:** For simple logic where the Integration Test (Step 8) covers the behavior.
 
 ### Puzzles and Solutions
 
