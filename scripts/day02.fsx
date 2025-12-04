@@ -87,7 +87,7 @@ let measure label action =
     let sw = Stopwatch.StartNew()
     let result = action()
     sw.Stop()
-    printfn "[%s] Answer: %d (Elapsed: %O)" label result sw.Elapsed
+    printfn "[%s] Answer: %d (Elapsed: %d ms)" label result sw.Elapsed.Milliseconds
     result
 
 // ==========================================
@@ -98,11 +98,13 @@ let run () =
     let inputPath = Path.Combine(__SOURCE_DIRECTORY__, "../inputs/day02.txt")
     
     if File.Exists inputPath then
-        printfn "Input: %s" inputPath
+        // printfn "Input: %s" inputPath
         let content = File.ReadAllText(inputPath)
         let ranges = Parser.parseInput content
         
-        printfn "--- Processing %d Ranges ---" ranges.Length
+        // printfn "--- Processing %d Ranges ---" ranges.Length
+
+        printfn "=== Day 2: Gift Shop ==="
 
         // Execute Part 1
         measure "Part 1" (fun () -> solve ranges Validator.isValidPart1) |> ignore

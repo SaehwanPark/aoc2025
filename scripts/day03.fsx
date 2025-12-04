@@ -112,7 +112,7 @@ let run () =
   let inputPath = Path.Combine("..", "inputs", "day03.txt")
   
   if File.Exists(inputPath) then
-    printfn "--- Day 3: Lobby ---"
+    printfn "=== Day 3: Lobby ==="
 
     // Load data silently
     let banks = InputParser.loadBanks inputPath

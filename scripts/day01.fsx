@@ -95,21 +95,23 @@ let solve strategy inputs =
 // ========================================================
 
 if File.Exists(INPUT_FILE) then
-  printfn "Reading input from: %s" INPUT_FILE
+  // printfn "Reading input from: %s" INPUT_FILE
   let lines = 
     File.ReadLines(INPUT_FILE) 
     |> Seq.filter (fun s -> not (String.IsNullOrWhiteSpace s))
     |> Seq.cache // Cache sequence to iterate twice
 
+  printfn "=== Day 1: Secret Entrance ==="
+
   // Measure Part 1
   let p1Start = DateTime.Now
   let result1 = solve applyMovePart1 lines
-  printfn "Part 1 Answer: %d (Time: %O)" result1 (DateTime.Now - p1Start)
+  printfn "Part 1 Answer: %d (Time: %d ms)" result1 (DateTime.Now - p1Start).Milliseconds
 
   // Measure Part 2
   let p2Start = DateTime.Now
   let result2 = solve applyMovePart2 lines
-  printfn "Part 2 Answer: %d (Time: %O)" result2 (DateTime.Now - p2Start)
+  printfn "Part 2 Answer: %d (Time: %d ms)" result2 (DateTime.Now - p2Start).Milliseconds
 
 else
   printfn "Error: Input file not found."
