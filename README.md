@@ -33,7 +33,7 @@ The table below tracks my progress for the 12-day challenge and provides links t
 | **3** | [Link](https://adventofcode.com/2025/day/3) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day03.fsx) |
 | **4** | [Link](https://adventofcode.com/2025/day/4) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day04.fsx) |
 | **5** | [Link](https://adventofcode.com/2025/day/5) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day05.fsx) |
-| **6** | [Link](https://adventofcode.com/2025/day/6) | **WIP** |
+| **6** | [Link](https://adventofcode.com/2025/day/6) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day06.fsx) |
 | **7** | [Link](https://adventofcode.com/2025/day/7) | **WIP** |
 | **8** | [Link](https://adventofcode.com/2025/day/8) | **WIP** |
 | **9** | [Link](https://adventofcode.com/2025/day/9) | **WIP** |
