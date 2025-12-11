@@ -24,22 +24,22 @@ This repository is organized to separate the code, input data, and analysis:
 
 ## ✅ Solutions
 
-The table below tracks my progress for the 12-day challenge and provides links to the puzzle descriptions and the corresponding F\# solution scripts.
+The table below tracks my progress for the 12-day challenge and provides links to the puzzle descriptions and the corresponding problem analyses as well as F\# solution scripts.
 
-| Day | Puzzle Link | Solution Link |
-| :-- | :--- | :--- |
-| **1** | [Link](https://adventofcode.com/2025/day/1) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day01.fsx) |
-| **2** | [Link](https://adventofcode.com/2025/day/2) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day02.fsx) |
-| **3** | [Link](https://adventofcode.com/2025/day/3) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day03.fsx) |
-| **4** | [Link](https://adventofcode.com/2025/day/4) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day04.fsx) |
-| **5** | [Link](https://adventofcode.com/2025/day/5) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day05.fsx) |
-| **6** | [Link](https://adventofcode.com/2025/day/6) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day06.fsx) |
-| **7** | [Link](https://adventofcode.com/2025/day/7) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day07.fsx) |
-| **8** | [Link](https://adventofcode.com/2025/day/8) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day08.fsx) |
-| **9** | [Link](https://adventofcode.com/2025/day/9) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day09.fsx) |
-| **10**| [Link](https://adventofcode.com/2025/day/10) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day10.fsx) |
-| **11**| [Link](https://adventofcode.com/2025/day/11) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day11.fsx) |
-| **12**| [Link](https://adventofcode.com/2025/day/12) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day12.fsx) |
+| Day | Puzzle | Analysis | Solution |
+| :-- | :--- | :--- | :--- |
+| **1** | [Link](https://adventofcode.com/2025/day/1) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day01.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day01.fsx) |
+| **2** | [Link](https://adventofcode.com/2025/day/2) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day02.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day02.fsx) |
+| **3** | [Link](https://adventofcode.com/2025/day/3) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day03.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day03.fsx) |
+| **4** | [Link](https://adventofcode.com/2025/day/4) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day04.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day04.fsx) |
+| **5** | [Link](https://adventofcode.com/2025/day/5) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day05.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day05.fsx) |
+| **6** | [Link](https://adventofcode.com/2025/day/6) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day06.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day06.fsx) |
+| **7** | [Link](https://adventofcode.com/2025/day/7) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day07.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day07.fsx) |
+| **8** | [Link](https://adventofcode.com/2025/day/8) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day08.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day08.fsx) |
+| **9** | [Link](https://adventofcode.com/2025/day/9) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day09.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day09.fsx) |
+| **10**| [Link](https://adventofcode.com/2025/day/10) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day10.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day10.fsx) |
+| **11**| [Link](https://adventofcode.com/2025/day/11) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day11.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day11.fsx) |
+| **12**| [Link](https://adventofcode.com/2025/day/12) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/analyses/day12.md) | [Link](https://github.com/SaehwanPark/aoc2025/blob/main/scripts/day12.fsx) |
 
 -----
 
