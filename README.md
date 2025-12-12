@@ -1,3 +1,5 @@
+![all puzzles completed as of 2025-12-12](https://i.imgur.com/QC96eWH.png)
+
 # 🎄 Advent of Code 2025 Solutions (in F\#)
 
 This repository contains my solutions for the **Advent of Code 2025** challenges, implemented in **F\#** using the latest **.NET 10** runtime.
@@ -18,7 +20,7 @@ This repository is organized to separate the code, input data, and analysis:
 
   * **`scripts/`**: Contains the F\# script files (`.fsx`) for each day's solution (e.g., `day01.fsx`).
   * **`inputs/`**: Holds the personalized input files for each puzzle (e.g., `day01.txt`).
-  * **`analyses/`**: A place for algorithm analysis, development notes, and solution sketches (e.g., Markdown or text files).
+  * **`analyses/`**: A place for algorithm analysis, development notes, and solution sketches (e.g., `day01.md`).
 
 -----
 
