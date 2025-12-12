@@ -1,18 +1,18 @@
 # Day 12: Christmas Tree Farm
 
-## 1\. Problem Overview
+## Problem Overview
 
 The objective was to determine how many **Regions** (rectangular grids of varying sizes) could successfully accommodate a specific multiset of **Presents** (polyomino shapes).
 This is a classic **2D Packing Problem** (a subset of Constraint Satisfaction Problems). The core task is a boolean check: *"Can these $N$ items tile into this $W \times H$ grid without overlapping?"*
 
-## 2\. Challenges
+## Challenges
 
   * **Combinatorial Explosion:** The search space is effectively $O(Positions^{Items})$. With input regions requiring up to \~180 items (summing the counts in the input file), a naive recursive search is impossible.
   * **Geometric Complexity:** Shapes can be rotated (0°, 90°, 180°, 270°) and flipped, resulting in up to 8 variations per shape.
   * **"Impossible" Instances:** The most computationally expensive scenarios are those where the total area of presents is *less* than the grid area (passing the trivial check), but the shapes geometrically *cannot* fit. The solver must exhaustively explore the entire search tree to prove impossibility.
   * **Grid Size:** Input grids (e.g., `50x50`) exceed 64 cells, preventing the use of standard `uint64` bitmasks, forcing the use of slower `BigInteger`.
 
-## 3\. Approach & Strategy
+## Approach & Strategy
 
 We modeled the problem as an **Exact Cover** style backtracking search optimized with heuristics.
 
@@ -24,14 +24,14 @@ We modeled the problem as an **Exact Cover** style backtracking search optimized
     1.  **Area Pruning:** If `Sum(PresentAreas) > GridArea`, return `False` immediately.
     2.  **Sort Descending:** We placed the largest/most complex shapes first. Large shapes have fewer valid positions and are more likely to cause collisions early, pruning bad branches near the root of the recursion tree.
 
-## 4\. Domain Modeling
+## Domain Modeling
 
   * **`ShapeDef`**: The raw visual definition of a present.
   * **`Variant`**: A pre-computed orientation containing the `Width`, `Height`, and relative `Points` normalized to (0,0).
   * **`Region`**: The target grid dimensions and the flattened list of `ShapeId`s to pack.
   * **`Bitmask`**: A `System.Numerics.BigInteger` where the bit at index `r * width + c` represents the cell at `(r, c)`.
 
-## 5\. Algorithm Sketch
+## Algorithm Sketch
 
 ```text
 Function Solve(Region):
@@ -49,7 +49,7 @@ Function Solve(Region):
       d. Return False (Backtrack)
 ```
 
-## 6\. Complexity Analysis
+## Complexity Analysis
 
   * **Time Complexity:** $O(R \cdot 8 \cdot W \cdot H \cdot B^N)$
       * $R$: Number of regions.
@@ -59,7 +59,7 @@ Function Solve(Region):
       * *Note:* In the worst case (unsatisfiable tight packing), this is exponential.
   * **Space Complexity:** $O(N \cdot W \cdot H)$ to store the pre-computed bitmasks for the recursion.
 
-## 7\. Performance Analysis (Why 25s?)
+## Performance Analysis (Why 25s?)
 
 I noted the execution took **25+ seconds**, significantly longer than previous days. This may be expected for this class of problem.
 
