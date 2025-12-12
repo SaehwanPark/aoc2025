@@ -236,7 +236,7 @@ if File.Exists inputPath then
   
   sw.Stop()
   let prepTime = sw.Elapsed.TotalMilliseconds
-  printfn "Parsing & Prep Time: %0.4f ms" prepTime
+  printfn "Parsing & Prep Time: %0.1f ms" prepTime
   
   // --- Phase 2: Solving ---
   sw.Restart()
@@ -250,9 +250,9 @@ if File.Exists inputPath then
   sw.Stop()
   let solveTime = sw.Elapsed.TotalMilliseconds
   
-  printfn "Solving Time     : %0.4f ms" solveTime
+  printfn "Solving Time     : %0.1f ms" solveTime
   printfn "------------------------------------------------"
-  printfn "Total Time     : %0.4f ms" (prepTime + solveTime)
+  printfn "Total Time     : %0.1f ms" (prepTime + solveTime)
   printfn "Final Result     : %d" result
 else
   printfn "Error: Input file not found at %s" inputPath

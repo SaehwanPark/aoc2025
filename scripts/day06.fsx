@@ -142,7 +142,7 @@ let measureTime (label: string) (action: unit -> 'a) : 'a =
   let sw = Stopwatch.StartNew()
   let result = action()
   sw.Stop()
-  printfn "[%s] Time: %0.4f ms" label (sw.Elapsed.TotalMilliseconds)
+  printfn "[%s] Time: %0.1f ms" label (sw.Elapsed.TotalMilliseconds)
   result
 
 let inputPath = Path.Combine(__SOURCE_DIRECTORY__, "../inputs/day06.txt")

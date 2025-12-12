@@ -26,7 +26,7 @@ module Diagnostics =
     let sw = Stopwatch.StartNew()
     let result = f ()
     sw.Stop()
-    printfn "%s: Done (Time: %dms)" name sw.ElapsedMilliseconds
+    printfn "%s: Done (Time: %.1fms)" name sw.Elapsed.TotalMilliseconds
     result
 
   /// Executes 'f', prints the result value and elapsed time, and returns the result.
@@ -35,7 +35,7 @@ module Diagnostics =
     let sw = Stopwatch.StartNew()
     let result = f ()
     sw.Stop()
-    printfn "%s: %A (Time: %dms)" name result sw.ElapsedMilliseconds
+    printfn "%s: %A (Time: %.1fms)" name result sw.Elapsed.TotalMilliseconds
     result
 
 // --- Parsing ---
@@ -148,12 +148,12 @@ let main () =
     printfn "Grid Dimensions: %dx%d" manifold.Width manifold.Height
     
     // 2. Part 1 Phase (Prints Result + Time)
-    Diagnostics.measureResult "Part 1 (Total Splits)" (fun () -> 
+    Diagnostics.measureResult "[Part 1] Answer" (fun () -> 
       Solution.solvePart1 manifold) 
     |> ignore
       
     // 3. Part 2 Phase (Prints Result + Time)
-    Diagnostics.measureResult "Part 2 (Total Timelines)" (fun () -> 
+    Diagnostics.measureResult "[Part 2] Answer" (fun () -> 
       Solution.solvePart2 manifold)
     |> ignore
 

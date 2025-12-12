@@ -97,7 +97,7 @@ let time (name: string) (f: unit -> 'T) =
   let sw = Stopwatch.StartNew()
   let result = f ()
   sw.Stop()
-  printfn "%s: %A (%d ms)" name result sw.ElapsedMilliseconds
+  printfn "%s: %A (%.1f ms)" name result sw.Elapsed.TotalMilliseconds
   result
 
 let main () =
@@ -112,15 +112,15 @@ let main () =
   let mergedRanges = Algorithms.mergeRanges data.FreshRanges
   sw.Stop()
   
-  printfn "Preprocessing (Merge): Reduced %d ranges to %d disjoint ranges (%d ms)" 
+  printfn "Preprocessing (Merge): Reduced %d ranges to %d disjoint ranges (%.1f ms)" 
     data.FreshRanges.Length 
     mergedRanges.Length 
-    sw.ElapsedMilliseconds
+    sw.Elapsed.TotalMilliseconds
 
   // 2. Measure Part 1 (Query)
-  time "Part 1 Result" (fun () -> solvePart1 data mergedRanges) |> ignore
+  time "[Part 1] Answer" (fun () -> solvePart1 data mergedRanges) |> ignore
 
   // 3. Measure Part 2 (Calculation)
-  time "Part 2 Result" (fun () -> solvePart2 mergedRanges) |> ignore
+  time "[Part 2] Answer" (fun () -> solvePart2 mergedRanges) |> ignore
 
 main ()

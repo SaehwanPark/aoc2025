@@ -76,7 +76,7 @@ module Diagnostics =
     let sw = Stopwatch.StartNew()
     let result = action()
     sw.Stop()
-    printfn "[%s] Time Elapsed: %0.4f ms" label sw.Elapsed.TotalMilliseconds
+    printfn "[%s] Time Elapsed: %0.1f ms" label sw.Elapsed.TotalMilliseconds
     result
 
 // --- 5. Solvers ---
@@ -114,7 +114,8 @@ open Solvers
 
 let main () =
   let inputPath = Path.Combine(__SOURCE_DIRECTORY__, "../inputs/day11.txt")
-  
+  printfn "=== Day 11: Reactor ==="
+
   // 1. Parsing Phase
   let network = 
     measureTime "Parsing" (fun () -> 
@@ -129,7 +130,7 @@ let main () =
     measureTime "Part 1" (fun () -> 
       solvePart1 network
     )
-  printfn "Part 1 Result: %d" part1Result
+  printfn "[Part 1] Answer: %d" part1Result
   printfn "---"
 
   // 3. Part 2 Phase
@@ -137,6 +138,6 @@ let main () =
     measureTime "Part 2" (fun () -> 
       solvePart2 network
     )
-  printfn "Part 2 Result: %d" part2Result
+  printfn "[Part 2] Answer: %d" part2Result
 
 main ()

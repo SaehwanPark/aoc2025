@@ -236,7 +236,7 @@ let measureTime (label: string) (action: unit -> 'a) : 'a =
   let sw = Stopwatch.StartNew()
   let result = action()
   sw.Stop()
-  printfn "[%s] Time: %0.4f ms" label sw.Elapsed.TotalMilliseconds
+  printfn "[%s] Time: %0.1f ms" label sw.Elapsed.TotalMilliseconds
   result
 
 // Main Workflow
@@ -256,22 +256,22 @@ if System.IO.File.Exists inputPath then
 
   // 2. Part 1
   let part1Result = 
-    measureTime "Part 1 Logic" (fun () -> 
+    measureTime "Part 1" (fun () -> 
       machines 
       |> Array.map Solvers.solvePart1 
       |> Array.sum
     )
-  printfn "Part 1 Answer: %d" part1Result
+  printfn "[Part 1] Answer: %d" part1Result
   printfn ""
 
   // 3. Part 2
   let part2Result = 
-    measureTime "Part 2 Logic" (fun () -> 
+    measureTime "Part 2" (fun () -> 
       machines 
       |> Array.map Solvers.solvePart2 
       |> Array.sum
     )
-  printfn "Part 2 Answer: %d" part2Result
+  printfn "[Part 2] Answer: %d" part2Result
 
 else
   printfn "Error: Input file not found at %s" inputPath

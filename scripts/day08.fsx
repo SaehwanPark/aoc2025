@@ -182,7 +182,7 @@ let measure label f =
   let result = f ()
   sw.Stop()
   // Only print time here, not the result
-  printfn "[%s] Time: %0.4f ms" label sw.Elapsed.TotalMilliseconds
+  printfn "[%s] Time: %0.1f ms" label sw.Elapsed.TotalMilliseconds
   result
 
 let run () =
@@ -197,10 +197,10 @@ let run () =
 
   // 2. Part 1
   let part1Ans = measure "Part 1" (fun () -> Solvers.solvePart1 points sortedEdges)
-  printfn "Part 1 Answer: %d" part1Ans
+  printfn "[Part 1] Answer: %d" part1Ans
 
   // 3. Part 2
   let part2Ans = measure "Part 2" (fun () -> Solvers.solvePart2 points sortedEdges)
-  printfn "Part 2 Answer: %d" part2Ans
+  printfn "[Part 2] Answer: %d" part2Ans
 
 run ()

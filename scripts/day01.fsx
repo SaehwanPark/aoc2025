@@ -106,12 +106,12 @@ if File.Exists(INPUT_FILE) then
   // Measure Part 1
   let p1Start = DateTime.Now
   let result1 = solve applyMovePart1 lines
-  printfn "Part 1 Answer: %d (Time: %d ms)" result1 (DateTime.Now - p1Start).Milliseconds
+  printfn "[Part 1] Answer: %d (Time: %.1f ms)" result1 (DateTime.Now - p1Start).TotalMilliseconds
 
   // Measure Part 2
   let p2Start = DateTime.Now
   let result2 = solve applyMovePart2 lines
-  printfn "Part 2 Answer: %d (Time: %d ms)" result2 (DateTime.Now - p2Start).Milliseconds
+  printfn "[Part 2] Answer: %d (Time: %.1f ms)" result2 (DateTime.Now - p2Start).TotalMilliseconds
 
 else
   printfn "Error: Input file not found."

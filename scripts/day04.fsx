@@ -88,7 +88,7 @@ let measure label action =
   let sw = Stopwatch.StartNew()
   let result = action()
   sw.Stop()
-  printfn "%s: %A (Time: %d ms)" label result sw.ElapsedMilliseconds
+  printfn "%s: %A (Time: %.1f ms)" label result sw.Elapsed.TotalMilliseconds
   result
 
 let getFilePath fileName =
@@ -108,10 +108,10 @@ let main () =
       printfn "=== Day 4: Printing Department ==="
 
       // Measure Part 1
-      let _ = measure "Part 1 Result" (fun () -> Logic.solvePart1 grid)
+      let _ = measure "[Part 1] Answer" (fun () -> Logic.solvePart1 grid)
 
       // Measure Part 2
-      let _ = measure "Part 2 Result" (fun () -> Logic.solvePart2 grid)
+      let _ = measure "[Part 2] Answer" (fun () -> Logic.solvePart2 grid)
       
       ()
 

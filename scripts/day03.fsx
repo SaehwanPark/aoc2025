@@ -105,7 +105,7 @@ let measure label action =
   let sw = Stopwatch.StartNew()
   let result = action()
   sw.Stop()
-  printfn "[%s] Result: %A (Time: %0.4f ms)" label result sw.Elapsed.TotalMilliseconds
+  printfn "[%s] Answer: %A (Time: %0.1f ms)" label result sw.Elapsed.TotalMilliseconds
   result
 
 let run () =

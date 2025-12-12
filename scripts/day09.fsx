@@ -162,7 +162,7 @@ let time (name: string) (func: unit -> 'a) =
   let sw = Stopwatch.StartNew()
   let result = func()
   sw.Stop()
-  printfn "[%s] Time: %0.3f ms" name sw.Elapsed.TotalMilliseconds
+  printfn "[%s] Time: %0.1f ms" name sw.Elapsed.TotalMilliseconds
   result
 
 // Input Helper
@@ -181,11 +181,11 @@ try
 
   // 2. Part 1
   let p1Result = time "Part 1" (fun () -> Solvers.solvePart1 tiles)
-  printfn "Part 1 Result: %d" p1Result
+  printfn "[Part 1] Answer: %d" p1Result
 
   // 3. Part 2
   let p2Result = time "Part 2" (fun () -> Solvers.solvePart2 tiles)
-  printfn "Part 2 Result: %d" p2Result
+  printfn "[Part 2] Answer: %d" p2Result
 
   printfn "\nDone."
 
